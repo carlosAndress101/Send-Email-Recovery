@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import './styles/styles.scss';
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' ed-grid card'>
+      <form>
+        <h1 className='s-75 m-50 lg-40 s-to-left m-to-center'>Reset Your Password</h1>
+        <p className='s-75 m-50 lg-40 s-to-left m-to-center'>To reset your password, enter your email below and submit. <br />
+          An email will be sent to you with instructions about how to <br />
+          complete the process. </p>
+
+        <div className='s-75 m-50 lg-40 s-to-left m-to-center'>
+          <b>Email Address</b>
+          <input type="text"></input>
+        </div>
+        <br></br>
+        <div className='s-75 m-50 lg-40 s-to-left m-to-center'>
+          <a className="button big">Reset Password</a>
+        </div>
+      </form>
     </div>
   );
 }
 
 export default App;
+//yarn add ed-grid edteam-style-guides sass
