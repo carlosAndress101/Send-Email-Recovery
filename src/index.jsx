@@ -9,7 +9,7 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  link: new HttpLink({uri:'https://back-end-nodejs-production.up.railway.app/graphql'}),
+  link: new HttpLink({uri:`${process.env.URL}`}),
   cache: new InMemoryCache()
 })
 
