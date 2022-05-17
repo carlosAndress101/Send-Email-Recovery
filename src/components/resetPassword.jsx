@@ -4,8 +4,8 @@ import { gql, useMutation } from '@apollo/client';
 import { useState } from 'react';
 
 const SENDMAIL = gql`
-mutation SendRecovery($admin: SendRecovery){
-    sendRecovery(admin: $admin)
+mutation SendRecovery($admin: SendRecovery) {
+  sendRecovery(admin: $admin)
 }
 `;
 
